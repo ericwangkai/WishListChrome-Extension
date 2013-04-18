@@ -1,17 +1,36 @@
 <head>
-  <title>OAuth 2.0 Options</title>
-  <script src="oauth2/oauth2.js"></script>
-  <script src="options.js"></script>
-  <style>
-    h1 { font-size: 20px }
-    button.authorized { background: green }
-  </style>
+  <title>WishList Adds-on</title>
+  <meta charset=utf-8>
+  <script src="jquery.min.js"></script>
+  <script src="script.js"></script>
+  <link href="bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-  <h1>OAuth 2.0 Permissions</h1>
-  <button id="weibo">
-    新浪微博
-  </button>
-  <button id="clear">Clear Tokens</button>
+  <div id="div_login">
+  <form class="form-horizontal" id="LoginForm">
+	  <legend align="center"><span > 请登录先</span> </legend>
+    <div class="control-group">
+      <label class="control-label" for="inputEmail">邮箱</label>
+      <div class="controls">
+        <input type="text" id="inputEmail" placeholder="Email">
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="inputPassword">密码</label>
+      <div class="controls">
+        <input type="password" id="inputPassword" placeholder="Password">
+      </div>
+    </div>
+    <div class="control-group">
+      <div class="controls">
+        <label class="checkbox">
+          <input type="checkbox"> Remember me
+        </label>
+        <button type="submit" class="btn" id="btnLogin">登录</button>
+      </div>
+    </div>
+  </form>
+  </div>
+  </div>
 </body>

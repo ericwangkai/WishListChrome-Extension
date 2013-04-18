@@ -4,9 +4,17 @@
 	"version" : "0.1",
 	"description" : "Adds-on for WishList",
 	"browser_action" : {
-		"default_icon" : "icon.png", 
-		"default_popup" : "login.html"
+		"default_icon" : "icon.png",
+		"default_popup" : "Popup.html"
+	},
+	"background": {
+		"scripts": ["bg.js"]
 	},
 	"options_page": "options.html",
-	"permissions" : ["tabs"]
+	"content_scripts": [
+    {
+      "matches": ["http://meteor.ericwangkai.c9.io/*"],
+      "js": ["jquery.min.js", "script.js"]
+    }],
+	"permissions" : ["tabs", "storage", "http://*/"]
 }
