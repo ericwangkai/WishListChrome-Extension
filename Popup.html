@@ -7,21 +7,37 @@
 	<link href="bootstrap.min.css" rel="stylesheet">
   </head>
 <body>
- <p>Hello World</p>
- <div id="div_addto">
- <form>
-	<fieldset>
-		<div>
-		<label for="productDesc">描述</label>
-		<input type="text" id="productDesc"/>
-		<div>
-		<label for="productPrice">价格</label>
-		<input type="text" id="productPrice"/>
-	</fieldset>
  
- </form>
+ <div id="div_addto">
+	 <form class="form-horizontal" id="addToForm">
+		<legend align="center"><p id="p_welcome">欢迎 </p> </legend>
+			<div class="control-group">
+				<label class="control-label" for="productDesc">描述</label>
+				<div class="controls">
+					<input type="text" id="productDesc"/>
+				</div>
+			</div>
+			
+			<div class="control-group">
+				<label class="control-label" for="productPrice">价格</label>
+				<div class="controls">
+					<input type="text" id="productPrice"/>
+				</div>
+			</div>
+			<div class="control-group">
+				<div class="controls">
+					<button type="submit" class="btn" id="bAddTo">加入心愿单</button>
+				</div>
+			</div>
+			<div class="row">
+				<a href="#" id="aClearToken">重新登录</a>
+			</div>
+    </div>
+			
+	 </form>
  </div>
  <div id="div_login">
+  <p id="pLoginErrorMessage"></P>
   <form class="form-horizontal" id="LoginForm">
 	  <legend align="center"><span > 请登录先</span> </legend>
     <div class="control-group">
